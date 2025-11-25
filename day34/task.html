@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1 ></h1>
+    <p id="text">lokesh</p>
+    <button onclick="increase()">Increase +</button> &nbsp;
+    <button onclick="decrease()">Decrease -</button><br><br>
+
+    <input type="text" id="QRInput" placeholder="Enter text">
+    <button onclick="generateQR()">Generate QR code</button>
+    <button id="resetBtn" onclick="resetQRCode()">Reset</button>
+    
+    <br><br>
+    <div id="qrcode"></div>
+    <a href="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></a>
+    
+    <h2>Live Search Filter</h2>
+    
+    <input list="itemsList" id="searchinput" placeholder="Search items...">
+    
+    <datalist id="itemsList">
+        <option value="Apple">
+        <option value="Banana">
+        <option value="Orange">
+        <option value="Mango">
+        <option value="Grapes">
+        <option value="Pineapple">
+    </datalist>
+
+    <h2>Accordion</h2>
+    
+    <button class="accordion">About HTML</button>
+    <div class="panel">
+        <p>Hypertext Markup Language is the standard markup language for documents <br>designed to be displayed in a web browser. It defines the content and structure <br>of web content. It is often assisted by technologies such as Cascading Style <br> Sheets and scripting languages such as JavaScript.</p>
+    </div>
+    
+    <button class="accordion">About css</button>
+    <div class="panel">
+        <p>CSS, which stands for Cascading Style Sheets, is a stylesheet language used <br>to describe the presentation of a document written in a markup language such <br> as HTML or XML. It is a fundamental technology of the World Wide Web,<br> alongside HTML and JavaScript. </p>
+    </div>
+    
+    <button class="accordion">About JS</button>
+    <div class="panel">
+        <p>JS is an abbreviation for JavaScript, a high-level, interpreted programming <br>language primarily known for its role in making web pages interactive.</p>
+    </div>
+    <script src="day34.js"></scrip>
+</body>
+</html>
